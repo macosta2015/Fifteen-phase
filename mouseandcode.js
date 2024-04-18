@@ -43,6 +43,7 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
 
 
 
+
         ////////////////////
         await waitForEnter();
         ////////////////////
@@ -64,6 +65,7 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
                 console.error('Third button not found.');
             }
         });
+
 
 
 
@@ -91,8 +93,6 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
         pasteIntoSketchFunction(editOptions1, newPage);
         await new Promise(resolve => setTimeout(resolve, 40000)); // Wait for 10 seconds
         console.log('Waited for 40 seconds.'); console.log('AFTER THE CODE RUNS.');
-        ////
-
 
 
 
@@ -111,9 +111,6 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
                 console.error('Third button not found.');
             }
         });
-
-
-
 
 
 
@@ -126,6 +123,7 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
 
 
 
+
         //SELECT SKETCH TO CLICK OR UNCLICK, THIS CODE IS REALLY IMPORTANT
         console.log('Waiting 10 seconds.');
         console.log('SELECTING ITEM 5 ON THE LIST.');
@@ -144,7 +142,6 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
 
 
 
-        // /////////
         //EDIT
         //ALL THE FOLLOWING CODE NEEDS TO GO TOGETHER
         console.log('Waiting 10 seconds.');
