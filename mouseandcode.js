@@ -212,6 +212,34 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
         ////////////////////
 
 
+
+
+
+
+
+
+        //MOVING TO THE THIRD SKETCH
+        console.log('moving to the third sketch')
+        //ALL THE CODE TOGETHER
+        // const desiredIndex = 5; // Or any other desired index
+        await clickButtonByIndex(newPage, desiredIndex);
+        //Right click option
+        // const selector = 'div[data-id="Dg4JdGx6jlZTm4XD"]'; // Replace with the appropriate selector
+        // const title = 'First Sketch'; // Replace with the desired title
+        const editOptions5 = await performRightClickOptionByTitle(newPage, selector, title);
+        console.log(editOptions5);
+        // const desiredOption = 'Copy sketch'; //TYPE WHICH EDIT OPTION YOU WANT TO CHOSE
+        copySketchFunction(editOptions5, newPage);
+
+
+
+
+
+        ////////////////////
+        await waitForEnter();
+        ////////////////////
+
+
         await newPage.evaluate(() => {
             document.addEventListener('mousemove', (event) => {
                 console.log(`Mouse coordinates: X = ${event.clientX}, Y = ${event.clientY}`);

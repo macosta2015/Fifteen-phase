@@ -24,6 +24,13 @@ async function copySketchFunction(editOptions3, newPage) {
         if (renameOptionElement) {
             console.log('Option element found.', desiredOption);
             await new Promise(resolve => setTimeout(resolve, 5000));
+
+
+
+
+
+
+
             await renameOptionElement.click();
             console.log(`Clicked on ${desiredOption} option element.`);
             await new Promise(resolve => setTimeout(resolve, 5000));
